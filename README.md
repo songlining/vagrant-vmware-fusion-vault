@@ -139,12 +139,14 @@ vagrant ssh vault-3
 ```
 
 ## File Structure
+```
 vault-vmware-vagrant/
 ├── Vagrantfile          # Main configuration
 ├── README.md           # This file
 ├── .gitignore          # Git ignore rules
 ├── vault.hclic         # Vault Enterprise license (not in git)
 └── vault-init.json     # Initialization data (auto-generated)
+```
 
 ## Troubleshooting
 
