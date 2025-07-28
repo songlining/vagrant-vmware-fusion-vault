@@ -11,6 +11,8 @@ The setup creates a highly available Vault cluster with:
 - **Web UI access** via port forwarding
 
 ## Architecture
+
+```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │    vault-1      │    │    vault-2      │    │    vault-3      │
 │ 192.168.56.10   │◄──►│ 192.168.56.11   │◄──►│ 192.168.56.12   │
@@ -23,7 +25,7 @@ The setup creates a highly available Vault cluster with:
 │   Host Machine  │
 │ localhost:8200  │
 └─────────────────┘
-
+```
 
 ## Prerequisites
 
