@@ -89,6 +89,15 @@ storage "raft" {
   path = "/opt/vault/data"
   node_id = "#{node[:node_id]}"
   
+  # Autopilot configuration
+  autopilot {
+    cleanup_dead_servers = true
+    last_contact_threshold = "10s"
+    max_trailing_logs = 1000
+    server_stabilization_time = "10s"
+    disable_upgrade_migration = false
+  }
+  
   retry_join {
     leader_api_addr = "http://192.168.56.10:8200"
   }
